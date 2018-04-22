@@ -1,20 +1,12 @@
 package zhu.minhui.com.shudu;
 
-import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-
-import zhu.minhui.com.shudu.engin.MySoduGenerator;
 import zhu.minhui.com.shudu.engin.MySolutionFinder;
+import zhu.minhui.com.shudu.engin.SoduLevel;
 import zhu.minhui.com.shudu.engin.SoduNode;
 import zhu.minhui.com.shudu.engin.SoduReader;
 

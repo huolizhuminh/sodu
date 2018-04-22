@@ -9,7 +9,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-import zhu.minhui.com.shudu.SoduLevel;
 import zhu.minhui.com.shudu.ThreadPoolProxy;
 
 

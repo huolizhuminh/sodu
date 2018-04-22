@@ -5,12 +5,11 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import zhu.minhui.com.shudu.SoduLevel;
-
 public class MySoduGenerator {
     private static final String TAG = "MySoduGenerator";
     SoduNode[][] soduNodes;
     private char[] charArray;
+    private int x;
 
     public int getNoNeedToSolve() {
         return noNeedSolve;
@@ -169,6 +168,7 @@ public class MySoduGenerator {
                 continue;
             }
             soduNodes[x][y].value = result[x][y].value;
+            charArray[9*x+y]= (char) ('0'+result[x][y].value);
             soduNodes[x][y].needTobeSolve = false;
             enterNum++;
         }
@@ -218,4 +218,5 @@ public class MySoduGenerator {
         soduNodes = SoduUtils.getNodes(charArray);
         return soduNodes;
     }
+
 }
