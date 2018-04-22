@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SoDu</string>
+    <string name="new_game">New Game</string>
+    <string name="solve_game">Solve Game</string>
+    <string name="back">Back</string>
+    <string name="result">Result</string>
+    <string name="remind">Remind</string>
+</resources>

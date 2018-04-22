@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SoDu</string>
+    <string name="new_game">新游戏</string>
+    <string name="solve_game">解游戏</string>
+    <string name="back">后退</string>
+    <string name="result">答案</string>
+    <string name="remind">提醒</string>
+</resources>

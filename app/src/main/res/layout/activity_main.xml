@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhu.minhui.com.shudu.GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/sodu_generate"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_group_back"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="@string/new_game" />
+
+        <zhu.minhui.com.shudu.AndroidSegmentedControlView
+            android:id="@+id/level_selector"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            app:ascv_defaultSelection="1"
+            app:ascv_items="@array/level" />
+
+        <zhu.minhui.com.shudu.PositionView
+            android:id="@+id/sodu_position"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_below="@id/sodu_generate"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:id="@+id/button_group"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sodu_position"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_group_back"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/back" />
+
+                <TextView
+                    android:id="@+id/btn_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/result" />
+
+                <TextView
+                    android:id="@+id/btn_remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/remind" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/btn_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/btn_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="2" />
+
+                    <TextView
+                        android:id="@+id/btn_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btn_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/btn_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/btn_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/btn_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/btn_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/btn_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="9" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
